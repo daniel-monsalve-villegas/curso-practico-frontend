@@ -1,0 +1,90 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.product-detail {
+  width: 22.5em;
+  padding-bottom: 1.5em;
+  position: absolute;
+  right: 0;
+}
+
+.product-detail-close {
+  background: var(--white);
+  width: 0.87em;
+  height: 0.87em;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+  padding: 0.75em;
+  border-radius: 50%;
+}
+
+.product-detail-close:hover {
+  cursor: pointer;
+}
+
+.product-detail > img:nth-child(2) {
+  width: 100%;
+  height: 22.5em;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+}
+
+.product-info {
+  margin: 1.5em 1.5em 0 1.5em;
+}
+
+.product-info p:first-child {
+  font-weight: bold;
+  font-size: var(--md);
+  margin: 0 0 0.25em;
+}
+
+.product-info p:nth-child(2) {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  margin: 0 0 2.25em;
+}
+
+.product-info p:nth-child(3) {
+  color: var(--very-light-pink);
+  font-size: var(--sm);
+  margin: 0 0 2.25em;
+}
+.primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 3.1em;
+}
+
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .product-detail {
+    width: 100%;
+  }
+}
